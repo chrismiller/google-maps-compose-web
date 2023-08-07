@@ -1,5 +1,6 @@
 package com.chihsuanwu.maps.compose.web
 
+import com.chihsuanwu.maps.compose.web.clustering.Cluster
 import com.chihsuanwu.maps.compose.web.layers.KMLFeatureData
 
 
@@ -23,4 +24,9 @@ class KMLMouseEvent(
     latLng: LatLng,
     val featureData: KMLFeatureData,
     val pixelOffset: Size,
+) : MapMouseEvent(latLng)
+
+class ClusterMouseEvent(
+    latLng: LatLng,
+    val cluster: Cluster
 ) : MapMouseEvent(latLng)

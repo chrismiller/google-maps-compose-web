@@ -34,6 +34,7 @@ kotlin {
 
                 implementation(compose.html.core)
                 implementation(compose.runtime)
+                implementation(npm("@googlemaps/markerclusterer", "2.4.0"))
             }
         }
         val jsTest by getting {

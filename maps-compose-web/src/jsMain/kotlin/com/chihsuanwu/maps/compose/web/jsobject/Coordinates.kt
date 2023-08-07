@@ -65,6 +65,8 @@ internal fun LatLngBounds.toJsLatLngBoundsLiteral(): JsLatLngBoundsLiteral {
     }
 }
 
+internal fun JsLatLngBoundsLiteral.toLatLngBounds(): LatLngBounds = LatLngBounds(east, north, south, west)
+
 /**
  * A [google.maps.Point](https://developers.google.com/maps/documentation/javascript/reference/coordinates#Point)
  */

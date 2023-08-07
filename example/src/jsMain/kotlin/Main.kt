@@ -53,6 +53,9 @@ private fun MainPage() {
                 route("/layer_example") {
                     LayerExample(apiKey = apiKey)
                 }
+                route("/cluster_example") {
+                    ClusteringExample(apiKey = apiKey)
+                }
             } else {
                 KeyRow(
                     apiKey = apiKey,
@@ -128,6 +131,9 @@ private fun Navigator() {
         }
         NavCard("Layer Example") {
             router.navigate("/layer_example")
+        }
+        NavCard("Clustering Example") {
+            router.navigate("/cluster_example")
         }
     }
 }
